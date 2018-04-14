@@ -1,0 +1,7 @@
+SRC=exo1_sauf_dernier.c
+SRCo=exo1_sauf_dernier.o
+BIN=exo1
+
+$(BIN): $(SRCo) ; cc -o $(BIN) $(SRCo)
+
+$(SRCo): $(SRC) ; cc -c $(SRC)
