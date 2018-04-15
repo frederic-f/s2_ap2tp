@@ -1,3 +1,0 @@
-/home/ramses/Documents/s2_ap2tp/tp3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ramses/Documents/s2_ap2tp/tp3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/ramses/Documents/s2_ap2tp/tp3/cmake-build-debug/CMakeFiles/tp3.dir

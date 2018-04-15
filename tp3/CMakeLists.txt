@@ -4,3 +4,4 @@ project(tp3 C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(tp3 exo2_grands_entiers.c)
+target_link_libraries(tp3 m)
