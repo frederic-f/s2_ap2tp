@@ -71,14 +71,74 @@ liste toGrandEntier (int n) {
 
 }
 
-int toEntierNaturel (liste L) {
 
-    return 4 ;
+/* *******************************************************************************************
+ * Grand entier -> Entier naturel
+ * version Recursive
+ * (iterative plus haut)
+ * ********************************************************************************************/
+
+int toEntierNaturel_FA (liste L, unsigned int n) {
+
+    if (est_vide (L)) {
+        return 0 ;
+    }
+
+    return prem (L) * pow (BASE, n) + toEntierNaturel_FA (reste (L), n + 1) ;
+
 }
 
+
+int toEntierNaturel (liste L) {
+
+    return toEntierNaturel_FA (L, 0) ;
+}
+
+
+/* *******************************************************************************************
+ * Somme de Grands Entiers
+ *
+ * version iterative
+ * ********************************************************************************************/
+
+liste sommeGrandsEntiers (liste L, liste M) {
+
+    liste S ;
+    int indice, retenue, num ;
+
+    indice = 0 ;
+    retenue = 0 ;
+
+    S = l_vide() ;
+
+    while ( ((!est_vide(L)) && (!est_vide(M))) ||  (retenue != 0)) {
+
+        num = retenue ;
+
+        if (!est_vide(L)) {
+            num += prem (L) ;
+            L = reste(L) ;
+        }
+
+        if (!est_vide(M)) {
+            num += prem (M) ;
+            M = reste (M) ;
+        }
+
+        S = cons (num % BASE, S) ;
+
+        retenue = num / BASE ;
+    }
+
+    return renverser (S) ;
+}
+
+/* *******************************************************************************************
+ * main
+ * ********************************************************************************************/
 int main() {
 	
-	liste L ;
+	liste L, M, N ;
 	
 	L = cons (9, cons (9, cons (6, cons (8, cons (0, cons (8, cons(0, l_vide ()))))))) ;
 
@@ -94,8 +154,13 @@ int main() {
     afficher_grand_entier (toGrandEntier (3456789)) ;
     printf("\n") ;
 
-    printf("Entier naturel correspondant : %d\n", toEntierNaturel (L)) ;
+    printf("Grand entier -> Entier naturel : %d\n", toEntierNaturel (L)) ;
     printf("\n") ;
+
+    M = cons (9, cons (3, cons (6, cons (8, l_vide ())))) ;
+    N = cons (0, cons (9, cons (7, cons (4, l_vide ())))) ;
+    printf ("Somme de grands entier %d + %d = %d\n", toEntierNaturel(N), toEntierNaturel(M) ,toEntierNaturel (sommeGrandsEntiers (N, M))) ;
+    printf ("\n") ;
 
 	return EXIT_SUCCESS ;
 
