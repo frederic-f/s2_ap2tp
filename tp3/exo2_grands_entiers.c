@@ -204,6 +204,10 @@ liste differenceGrandsEntiers (liste L, liste M) {
  * Produits de Grands Entiers
  *
  * version recursive
+ * une fonction recursive pour calculer une ligne
+ * une fonctin iterative qui ajoute les lignes
+ * 
+ * 3 facons de faire - recursive, iteratif, recursif - iteratif
  * ********************************************************************************************/
 
 liste prod_FA (liste L, liste M, unsigned int retenue) {
