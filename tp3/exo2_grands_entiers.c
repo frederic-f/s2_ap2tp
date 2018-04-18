@@ -101,7 +101,7 @@ int toEntierNaturel (liste L) {
  * version iterative
  * ********************************************************************************************/
 
-liste sommeGrandsEntiers (liste L, liste M) {
+liste sommeGrandsEntiers_iter (liste L, liste M) {
 
     liste S ;
     int indice, retenue, num ;
@@ -134,6 +134,106 @@ liste sommeGrandsEntiers (liste L, liste M) {
 }
 
 /* *******************************************************************************************
+ * Somme de Grands Entiers
+ *
+ * version recursive
+ * ********************************************************************************************/
+
+liste som_FA (liste L, liste M, unsigned int retenue) {
+	
+	if ((est_vide (L)) && (est_vide (M))) { // L et M sont vides, uniquement la retenue a traiter
+		
+		return cons (retenue, l_vide ()) ;
+	}
+	
+	else if (est_vide (L)) { // M n'est pas vide
+		return cons ((prem (M) + retenue) % BASE, som_FA (l_vide (), reste (M), (prem (M) + retenue) > BASE)) ;
+	}
+	
+	else if (est_vide (M)) { // L n'est pas vide
+		return cons ((prem (L) + retenue) % BASE, som_FA (reste (L), l_vide (), (prem (L) + retenue) > BASE));
+	}
+	
+	else { // ni L ni M sont vides
+		return cons ((prem (L) + prem (M) + retenue) % BASE, som_FA (reste (L), reste (M), (prem (L) + retenue + prem (M)) > BASE )) ;
+	}
+}
+
+
+liste sommeGrandsEntiers (liste L, liste M) {
+	
+	return (som_FA (L, M, 0)) ;
+}
+
+
+/* *******************************************************************************************
+ * Difference de Grands Entiers
+ *
+ * version recursive
+ * ********************************************************************************************/
+
+liste dif_FA (liste L, liste M, unsigned int retenue) {
+	
+	if (est_vide (M)) { // plus rien a soustraire
+		
+		if (est_vide (L)) { // operation terminee
+			return l_vide () ;
+		}
+		else { // on finit de vider L
+			return cons (prem (L) - retenue, dif_FA (reste (L), l_vide(), 0)) ;
+		}
+	}
+	
+	
+	if ((prem(L) - retenue) >= (prem(M))) { //pas de retenue a passer
+		return cons (prem (L) - retenue - prem (M), dif_FA (reste (L), reste (M), 0)) ;
+	}
+	else { // prem (L) - retenue < prem (M) => retenue a passer
+		return cons (BASE + prem (L) - retenue - prem(M), dif_FA (reste (L), reste (M), 1)) ;
+	}
+}
+
+
+liste differenceGrandsEntiers (liste L, liste M) {
+
+	return dif_FA (L, M, 0) ;
+}
+
+
+/* *******************************************************************************************
+ * Produits de Grands Entiers
+ *
+ * version recursive
+ * ********************************************************************************************/
+
+liste prod_FA (liste L, liste M, unsigned int retenue) {
+	
+	if ((est_vide (L)) && (est_vide (M))) { // L et M sont vides, uniquement la retenue a traiter
+		
+		return cons (retenue, l_vide ()) ;
+	}
+	
+	else if (est_vide (L)) { // M n'est pas vide
+		return cons ((prem (M) + retenue) % BASE, som_FA (l_vide (), reste (M), (prem (M) + retenue) > BASE)) ;
+	}
+	
+	else if (est_vide (M)) { // L n'est pas vide
+		return cons ((prem (L) + retenue) % BASE, som_FA (reste (L), l_vide (), (prem (L) + retenue) > BASE));
+	}
+	
+	else { // ni L ni M sont vides
+		return cons ((prem (L) + prem (M) + retenue) % BASE, som_FA (reste (L), reste (M), (prem (L) + retenue + prem (M)) > BASE )) ;
+	}
+}
+
+
+liste produitGrandsEntiers (liste L, liste M) {
+	
+	return (prod_FA (L, M, 0)) ;
+}
+
+
+/* *******************************************************************************************
  * main
  * ********************************************************************************************/
 int main() {
@@ -157,11 +257,17 @@ int main() {
     printf("Grand entier -> Entier naturel : %d\n", toEntierNaturel (L)) ;
     printf("\n") ;
 
-    M = cons (9, cons (3, cons (6, cons (8, l_vide ())))) ;
+    M = cons (9, cons (3, cons (0, cons (8, l_vide ())))) ;
     N = cons (0, cons (9, cons (7, cons (4, l_vide ())))) ;
     printf ("Somme de grands entier %d + %d = %d\n", toEntierNaturel(N), toEntierNaturel(M) ,toEntierNaturel (sommeGrandsEntiers (N, M))) ;
     printf ("\n") ;
 
-	return EXIT_SUCCESS ;
+    printf ("Différence de grands entier %d - %d = %d\n", toEntierNaturel(M), toEntierNaturel(N) ,toEntierNaturel (differenceGrandsEntiers (M, N))) ;
+    printf ("\n") ;
+
+    printf ("Produit de grands entier %d x %d = %d\n", toEntierNaturel(M), toEntierNaturel(N) ,toEntierNaturel (produitGrandsEntiers (M, N))) ;
+    printf ("\n") ;
+    
+    return EXIT_SUCCESS ;
 
 }
