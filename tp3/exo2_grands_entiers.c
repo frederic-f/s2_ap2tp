@@ -269,7 +269,7 @@ int main() {
     printf ("Différence de grands entier %d - %d = %d\n", toEntierNaturel(M), toEntierNaturel(N) ,toEntierNaturel (differenceGrandsEntiers (M, N))) ;
     printf ("\n") ;
 
-    printf ("Produit de grands entier %d x %d = %d\n", toEntierNaturel(M), toEntierNaturel(N) ,toEntierNaturel (produitGrandsEntiers (M, N))) ;
+    printf ("Produit de grands entier %d x %d = %d\n", afficher_(M), toEntierNaturel(N) ,toEntierNaturel (produitGrandsEntiers (M, N))) ;
     printf ("\n") ;
     
     return EXIT_SUCCESS ;
