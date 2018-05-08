@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pv1/Documents/s2_ap2tp/tp2/hanoi.c
+stdlib.h
+-
+stdio.h
+-
+
+/home/pv1/Documents/s2_ap2tp/tp3/exo3_parenthesage.c
+stdbool.h
+-
+string.h
+-
+liste_char.c
+/home/pv1/Documents/s2_ap2tp/tp3/liste_char.c
+
+/home/pv1/Documents/s2_ap2tp/tp3/liste_char.c
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+

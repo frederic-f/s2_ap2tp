@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/tp3.dir/exo3_parenthesage.c.o CMakeFiles/tp3.dir/home/pv1/Documents/s2_ap2tp/tp2/hanoi.c.o  -o tp3 -lm 

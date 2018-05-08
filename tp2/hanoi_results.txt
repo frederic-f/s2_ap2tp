@@ -1,0 +1,70 @@
+/home/pv1/Documents/s2_ap2tp/tp2/cmake-build-debug/tp2
+Appel hanoi pour n = 1
+Déplacer un disque du pilier 1 au pilier 3
+
+Appel hanoi pour n = 2
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 2 au pilier 3
+
+Appel hanoi pour n = 3
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 3 au pilier 2
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 2 au pilier 1
+Déplacer un disque du pilier 2 au pilier 3
+Déplacer un disque du pilier 1 au pilier 3
+
+Appel hanoi pour n = 4
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 2 au pilier 3
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 3 au pilier 1
+Déplacer un disque du pilier 3 au pilier 2
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 2 au pilier 3
+Déplacer un disque du pilier 2 au pilier 1
+Déplacer un disque du pilier 3 au pilier 1
+Déplacer un disque du pilier 2 au pilier 3
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 2 au pilier 3
+
+Appel hanoi pour n = 5
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 3 au pilier 2
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 2 au pilier 1
+Déplacer un disque du pilier 2 au pilier 3
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 3 au pilier 2
+Déplacer un disque du pilier 3 au pilier 1
+Déplacer un disque du pilier 2 au pilier 1
+Déplacer un disque du pilier 3 au pilier 2
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 3 au pilier 2
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 2 au pilier 1
+Déplacer un disque du pilier 2 au pilier 3
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 2 au pilier 1
+Déplacer un disque du pilier 3 au pilier 2
+Déplacer un disque du pilier 3 au pilier 1
+Déplacer un disque du pilier 2 au pilier 1
+Déplacer un disque du pilier 2 au pilier 3
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 1 au pilier 2
+Déplacer un disque du pilier 3 au pilier 2
+Déplacer un disque du pilier 1 au pilier 3
+Déplacer un disque du pilier 2 au pilier 1
+Déplacer un disque du pilier 2 au pilier 3
+Déplacer un disque du pilier 1 au pilier 3
+
+
+Process finished with exit code 0
