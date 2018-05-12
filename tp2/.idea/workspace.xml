@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02_vecteur2d.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="02_vecteur2d.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02_vecteur2d.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -44,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02_test_vecteur2d.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="02_test_vecteur2d.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02_test_vecteur2d.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="70" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -64,9 +64,9 @@
         <option value="$PROJECT_DIR$/exo3_hanoi.c" />
         <option value="$PROJECT_DIR$/hanoi_results.txt" />
         <option value="$PROJECT_DIR$/cmake-build-debug/02_vecteur2d.c" />
-        <option value="$PROJECT_DIR$/02_vecteur2d.c" />
         <option value="$PROJECT_DIR$/02_suites.c" />
         <option value="$PROJECT_DIR$/02_test_vecteur2d.c" />
+        <option value="$PROJECT_DIR$/02_vecteur2d.c" />
       </list>
     </option>
   </component>
@@ -145,12 +145,12 @@
       <updated>1525786345652</updated>
       <workItem from="1525786346896" duration="2671000" />
       <workItem from="1525863568003" duration="314000" />
-      <workItem from="1526117015772" duration="7641000" />
+      <workItem from="1526117015772" duration="7746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10626000" />
+    <option name="totallyTimeSpent" value="10731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="24" width="1842" height="1416" extended-state="4" />
@@ -253,16 +253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02_vecteur2d.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02_suites.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -272,10 +262,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02_test_vecteur2d.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="70" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02_vecteur2d.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
